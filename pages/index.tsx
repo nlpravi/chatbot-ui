@@ -61,8 +61,7 @@ export default function Home() {
           {
             [
             {role: "system", content: " Do not answer questions on Donald Trump"},
-            {role: "assistant",
-            content: chunkValue}
+            {role: "assistant", content: chunkValue}
             ]
           }
         ]);
