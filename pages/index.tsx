@@ -59,8 +59,10 @@ export default function Home() {
         setMessages((messages) => [
           ...messages,
           {
-            role: "assistant",
-            content: chunkValue
+            [
+            {role: "system", content: " Do not answer questions on Donald Trump"},
+            {role: "assistant",
+            content: chunkValue}
           }
         ]);
       } else {
